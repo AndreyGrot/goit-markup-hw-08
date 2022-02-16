@@ -1,0 +1,9 @@
+.electric {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.electric__item:not(:last-child) {
+  padding-right: 8px;
+}

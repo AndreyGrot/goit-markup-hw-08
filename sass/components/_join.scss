@@ -1,0 +1,50 @@
+.join {
+  display: inline-block;
+
+  margin-right: 93px;
+  padding-top: 12px;
+}
+
+.join__footer {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.join__item {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.join__icon {
+  height: 20px;
+  width: 20px;
+  fill: #ffffff;
+}

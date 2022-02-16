@@ -1,0 +1,38 @@
+.site-nav{
+    display: flex;
+}
+
+.site-nav__item{
+    position: relative;
+
+    display: flex;
+
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.site-nav__link{
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: $transition-duration; 
+    transition-timing-function: $transition-timing-function;
+
+    &:hover, &:focus{
+    color: $accent-color;
+    text-decoration: none;
+    }
+}
+
