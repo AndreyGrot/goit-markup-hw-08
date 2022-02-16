@@ -45,17 +45,6 @@ svg {
   margin: -1px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container--footer {
-  display: flex;
-}
-
 .current-page::after {
   position: absolute;
   content: "";
@@ -114,6 +103,31 @@ svg {
   line-height: 1, 14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container--footer {
+  display: flex;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header {

@@ -42,18 +42,6 @@ svg {
   margin: -1px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  &--footer {
-    display: flex;
-  }
-}
-
 .current-page::after {
   position: absolute;
 
