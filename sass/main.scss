@@ -1,10 +1,13 @@
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './components/base_styles';
-@import './components/container';
-@import './components/_page-header';
-@import './components/header-nav';
+@import './block/container';
+@import './block/page-header';
+@import './block/header-nav';
+@import './block/mobile-nav';
+@import './block/desktop-contact';
 @import './components/logo';
+@import './components/button-mobile';
 @import './components/site-nav';
 @import './components/contact';
 @import './components/hero';

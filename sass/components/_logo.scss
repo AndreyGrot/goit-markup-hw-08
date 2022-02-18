@@ -1,30 +1,49 @@
 .logo {
-    font-family: Raleway;
-    font-weight: 700;
+  font-family: Raleway;
+  font-weight: 700;
+
+  color: $logo-color;
+  text-decoration: none;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.19;
-
-    color: $logo-color;
-    text-decoration: none;
+  }
 }
 
-.logo__header-logo{    
+.logo__header-logo {
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $desktop) {
+    display: inline-flex;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
+  }
 
-    &--black{
-        color: #212121;
-    }
+  &--black {
+    color: #212121;
+  }
 }
 
-.logo__footer-logo{
-    display: block;
-    margin-top: 0;
-    margin-bottom: 20px;
+.logo__footer-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
 
-    &--white{
-        color: #ffffff;
-    }
+  &--white {
+    color: #ffffff;
+  }
 }
-
-
-

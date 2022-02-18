@@ -1,0 +1,25 @@
+.desktop-contact {
+  background-color: #ffffff;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
