@@ -6,6 +6,12 @@
 
   &--footer {
     display: flex;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
   }
 
   @media screen and (max-width: 767px) {

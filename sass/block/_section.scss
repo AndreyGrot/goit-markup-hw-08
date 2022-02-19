@@ -1,13 +1,9 @@
 .section {
-  &--without-top {
-    padding-top: 0;
-  }
-
   &--team {
     background-color: $team-background-color;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     &--mobyle {
       display: none;
     }
@@ -21,6 +17,10 @@
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  &--without-top {
+    padding-top: 0;
   }
 }
 

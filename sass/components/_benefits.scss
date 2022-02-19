@@ -2,7 +2,7 @@
 }
 
 .benefits__list {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -13,6 +13,21 @@
     width: 100%;
 
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 354px;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {

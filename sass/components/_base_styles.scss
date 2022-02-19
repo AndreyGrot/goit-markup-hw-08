@@ -15,7 +15,7 @@ h2 {
 
   text-align: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 28px;
     line-height: 1.18;
   }
@@ -95,7 +95,7 @@ svg {
 
     text-align: left;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       display: flex;
       margin-left: auto;
       margin-right: auto;
@@ -142,7 +142,7 @@ svg {
   text-transform: uppercase;
 
   color: #ffffff;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }

@@ -6,6 +6,10 @@
 
     margin-right: 70px;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 0;
+  }
 }
 
 .adress__wrap {
@@ -26,14 +30,20 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address__item {
     text-align: center;
   }
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__map {

@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -27,7 +27,7 @@
 
 .hero__title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
 
   font-weight: 900;
 
@@ -36,7 +36,7 @@
 
   color: #ffffff;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.6;
   }

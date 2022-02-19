@@ -6,7 +6,11 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: inline-block;
 
     margin-right: 93px;
