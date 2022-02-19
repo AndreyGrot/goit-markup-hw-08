@@ -1,7 +1,27 @@
 .electric {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .electric__item {
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .electric__item:not(:last-child) {
