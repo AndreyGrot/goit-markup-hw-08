@@ -14,9 +14,19 @@ body.modal-open {
 
 h2 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 img {
@@ -80,6 +90,13 @@ svg {
   padding: 10px 29px;
   text-align: left;
 }
+@media screen and (max-width: 767px) {
+  .button--button-footer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .button--portfolio {
   padding: 6px 22px;
   border-radius: 4px;
@@ -108,6 +125,11 @@ svg {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .attention-title {
+    text-align: center;
+  }
+}
 
 .container {
   padding-left: 15px;
@@ -118,9 +140,10 @@ svg {
 .container--footer {
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {
@@ -135,8 +158,8 @@ svg {
 }
 
 .page-header {
-  border-bottom: 1px solid #ECECEC;
-  background-color: header-background-color;
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 767px) {
@@ -235,6 +258,11 @@ svg {
 .logo__footer-logo--white {
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .logo__footer-logo {
+    text-align: center;
+  }
+}
 
 .button-mobile {
   position: relative;
@@ -316,6 +344,7 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .contact {
+    flex-direction: row;
     margin-left: auto;
   }
 }
@@ -380,29 +409,49 @@ svg {
 }
 
 .hero {
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
-  background-color: #2F303A;
+  background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 30;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -410,33 +459,65 @@ svg {
   padding: 10px 32px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .section--without-top {
   padding-top: 0;
 }
 .section--team {
   background-color: #f5f4fa;
 }
+@media screen and (max-width: 767px) {
+  .section--mobyle {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .section__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 
-.benefits__list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.benefits__item {
-  width: 270px;
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .benefits__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
-.benefits__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+    margin-right: 30px;
+  }
+  .benefits__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .benefits__content {
@@ -444,8 +525,17 @@ svg {
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 270px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
+}
+@media screen and (max-width: 767px) {
+  .benefits__content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__content {
+    width: 270px;
+  }
 }
 
 .benefits__icon {
@@ -504,20 +594,32 @@ svg {
   color: #FFFFFF;
 }
 
-.team__list {
-  display: flex;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    text-align: center;
+  }
 }
-
 .team__item {
-  width: calc((100%-90px)/4);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .team__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+  }
 }
 
 .team__name {
@@ -543,20 +645,32 @@ svg {
   color: #757575;
 }
 
-.team__list {
-  display: flex;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    text-align: center;
+  }
 }
-
 .team__item {
-  width: calc((100%-90px)/4);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .team__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+  }
 }
 
 .team__name {
@@ -588,6 +702,11 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .social-team {
+    margin-bottom: 24px;
+  }
+}
 
 .social-team__item {
   height: 44px;
@@ -618,7 +737,7 @@ svg {
 .social-team__icon {
   height: 20px;
   width: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -629,14 +748,26 @@ svg {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .customers__item {
-  margin-right: 30px;
   border-radius: 4px;
+  margin-right: 30px;
 }
 .customers__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .customers__item {
+    margin-bottom: 30px;
+  }
+  .customers__item:nth-child(even) {
+    margin-right: 0;
+  }
+  .customers__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 .customers__link {
@@ -644,13 +775,27 @@ svg {
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 170px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .customers__link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 .customers__link:focus, .customers__link:hover {
   border-color: #2196f3;
@@ -659,7 +804,7 @@ svg {
 .customers__icon {
   height: 60px;
   width: 106px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -934,10 +1079,12 @@ svg {
   background-color: #2f303a;
 }
 
-.address {
-  display: inline-block;
-  width: 231px;
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .address {
+    display: inline-block;
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .adress__wrap {
@@ -952,7 +1099,17 @@ svg {
   line-height: 1.71;
   font-style: normal;
 }
+@media screen and (max-width: 767px) {
+  .address__list {
+    margin-bottom: 60px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .address__item {
+    text-align: center;
+  }
+}
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -969,6 +1126,11 @@ svg {
   color: #2196f3;
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .address__map {
+    text-align: center;
+  }
+}
 
 .address__nav {
   color: rgba(255, 255, 255, 0.6);
@@ -982,15 +1144,31 @@ svg {
   text-decoration: none;
 }
 
-.join {
-  display: inline-block;
-  margin-right: 93px;
-  padding-top: 12px;
+@media screen and (max-width: 767px) {
+  .join {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .join {
+    display: inline-block;
+    margin-right: 93px;
+    padding-top: 12px;
+  }
 }
 
 .join__footer {
   display: flex;
   margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .join__footer {
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+  }
 }
 
 .join__item {
@@ -1025,28 +1203,39 @@ svg {
   fill: #ffffff;
 }
 
-.subscribe {
-  display: inline-block;
-  padding-top: 12px;
-}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: inline-block;
+    padding-top: 12px;
+  }
 
-.subscribe__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
-
 .subscribe__input {
   height: 50px;
-  width: 358px;
-  margin-right: 12px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: rgba(255, 255, 255, 0.6);
   background-color: inherit;
+}
+@media screen and (max-width: 767px) {
+  .subscribe__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe__input::-moz-placeholder {

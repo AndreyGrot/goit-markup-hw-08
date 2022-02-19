@@ -8,8 +8,10 @@
     display: flex;
   }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     width: $mobile;
+
+    flex-direction: column;
   }
 
   @media screen and (min-width: $tablet) {

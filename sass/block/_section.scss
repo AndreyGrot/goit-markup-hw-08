@@ -1,0 +1,37 @@
+.section {
+  &--without-top {
+    padding-top: 0;
+  }
+
+  &--team {
+    background-color: $team-background-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    &--mobyle {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__title {
+  margin-top: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}

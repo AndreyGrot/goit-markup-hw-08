@@ -1,52 +1,70 @@
-.benefits{
+.benefits {
 }
 
-.benefits__list{
+.benefits__list {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
+  }
 }
 
-.benefits__item{
+.benefits__item {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 270px;
     margin-right: 30px;
 
-    &:last-child{
-        margin-right: 0;
+    &:last-child {
+      margin-right: 0;
     }
+  }
 }
 
-.benefits__content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.benefits__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 120px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 270px;
-    background-color: #F5F4FA;
+  }
 }
 
-.benefits__icon{
-    height: 70px;
-    width: 70px;
+.benefits__icon {
+  height: 70px;
+  width: 70px;
 
-    background-position: center;
+  background-position: center;
 }
 
-.benefits__title{
-    margin-top: 30px;
-    margin-bottom: 10px;
+.benefits__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
-.benefits__text{
-    margin-top: 0;
-    margin-bottom: 0;
+.benefits__text {
+  margin-top: 0;
+  margin-bottom: 0;
 
-    font-size: 14px;
-    line-height: 1.71;
-    color: $secondary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-text-color;
 }

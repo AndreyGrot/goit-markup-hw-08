@@ -1,9 +1,11 @@
 .address {
-  display: inline-block;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
 
-  width: 231px;
+    width: 231px;
 
-  margin-right: 70px;
+    margin-right: 70px;
+  }
 }
 
 .adress__wrap {
@@ -18,6 +20,16 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address__item {
+    text-align: center;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -38,6 +50,10 @@
   &:focus {
     color: $accent-color;
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 

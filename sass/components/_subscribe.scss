@@ -1,22 +1,22 @@
-.subscribe {
-  display: inline-block;
+@media screen and (min-width: $tablet) {
+  .subscribe {
+    display: inline-block;
 
-  padding-top: 12px;
-}
+    padding-top: 12px;
+  }
 
-.subscribe__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  margin-top: 20px;
+    margin-top: 20px;
+  }
 }
 
 .subscribe__input {
   height: 50px;
-  width: 358px;
 
-  margin-right: 12px;
   padding: 15px 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -26,6 +26,18 @@
 
   color: rgba(255, 255, 255, 0.6);
   background-color: inherit;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+
+    margin-right: 12px;
+  }
 }
 
 .subscribe__input::placeholder {

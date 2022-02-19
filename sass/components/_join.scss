@@ -1,13 +1,28 @@
 .join {
-  display: inline-block;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
 
-  margin-right: 93px;
-  padding-top: 12px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+
+    margin-right: 93px;
+    padding-top: 12px;
+  }
 }
 
 .join__footer {
   display: flex;
   margin-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+  }
 }
 
 .join__item {
