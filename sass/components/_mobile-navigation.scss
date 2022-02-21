@@ -1,0 +1,33 @@
+.mobile-navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: $primary-text-color;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  &--current-mobile {
+    color: $accent-color;
+  }
+}

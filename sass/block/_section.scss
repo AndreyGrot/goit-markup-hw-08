@@ -1,5 +1,7 @@
 .section {
   &--team {
+    min-width: 480px;
+
     background-color: $team-background-color;
   }
 
@@ -10,6 +12,8 @@
   }
 
   @media screen and (max-width: 1199px) {
+    min-width: 480px;
+
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -20,6 +24,8 @@
   }
 
   &--without-top {
+    min-width: 480px;
+
     padding-top: 0;
   }
 }
