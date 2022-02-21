@@ -5,7 +5,6 @@
 
   cursor: pointer;
 
-  margin-left: 14px;
   margin-right: auto;
   padding-left: 23px;
   margin-bottom: 30px;
@@ -14,6 +13,10 @@
   line-height: 1.7;
 
   color: #757575;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 14px;
+  }
 }
 
 .checkbox__input {

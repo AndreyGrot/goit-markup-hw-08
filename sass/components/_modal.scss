@@ -1,6 +1,5 @@
 .backdrop {
   position: fixed;
-  opacity: 1;
 
   top: 0;
   left: 0;
@@ -10,22 +9,34 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity $transition-duration $transition-timing-function;
-
-  @media screen and (min-width: $mobile) {
-    padding: 15px;
+  @media screen and (max-width: 480px) {
+    padding: 93px 15px;
     overflow-y: scroll;
+  }
+
+  @media screen and (min-width: 481px) {
+    opacity: 1;
+
+    transition: opacity $transition-duration $transition-timing-function;
+  }
+
+  @media screen and (max-width: 767px) {
+    z-index: 3;
   }
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 481px) {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
-  opacity: 1;
-
   padding: 40px;
   border-radius: 4px;
 
@@ -34,31 +45,36 @@
 
   background-color: #ffffff;
 
-  transform: translate(-50%, -50%) scale(1);
-
-  transition: opacity $transition-duration $transition-timing-function,
-    transform $transition-duration $transition-timing-function;
-
-  @media screen and (min-width: $mobile) {
-    width: 100%;
-    max-width: 450px;
-
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (max-width: 480px) {
+    position: relative;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 481px) {
     position: absolute;
     top: 50%;
     left: 50%;
 
+    opacity: 1;
+
+    max-width: 450px;
+    width: 100%;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: opacity $transition-duration $transition-timing-function,
+      transform $transition-duration $transition-timing-function;
+  }
+
+  @media screen and (min-width: $desktop) {
     min-height: 581px;
     min-width: 528px;
   }
 
   .backdrop.is-hidden & {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(2, 0.5);
+    @media screen and (min-width: 481px) {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2, 0.5);
+    }
   }
 }
 
